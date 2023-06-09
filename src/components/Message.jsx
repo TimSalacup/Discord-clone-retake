@@ -20,14 +20,14 @@ function Message({ id, message, timestamp, name, email, photoURL }) {
       <img
         src={photoURL}
         alt=""
-        className="h-10 rounded-full cursor-pointer mr-3 hover:shadow-2xl"
+        className="h-10 rounded-full mr-3 hover:shadow-2xl"
       />
       <div className="flex flex-col">
         <h4 className="fkex items-center space-x-2 font-medium ">
-          <span className="hover:underline text-white space-x-2 text-sm">
+          <span className="hover:underline text-white space-x-2 text-sm cursor-default">
             {name}
           </span>
-          <span className="text-[#72767d] text-xs">
+          <span className="text-[#72767d] text-xs cursor-default">
             {moment(timestamp?.toDate().getTime()).format("lll")}
           </span>
         </h4>

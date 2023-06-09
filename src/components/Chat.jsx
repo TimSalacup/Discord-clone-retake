@@ -40,6 +40,11 @@ function Chat() {
       )
   );
 
+  function notImplemented(e) {
+    e.preventDefault();
+    alert("Haven't got around to doing this")
+  }
+
   const scrollToBottom = () => {
     chatRef.current.scrollIntoView({
       behavior: "smooth",
@@ -77,14 +82,15 @@ function Chat() {
           <h4 className="text-white font-semibold">{channelName}</h4>
         </div>
         <div className="flex space-x-3">
-          <BellIcon className="icon" />
-          <ChatIcon className="icon" />
-          <UsersIcon className="icon" />
+          <BellIcon className="icon cursor-not-allowed" />
+          <ChatIcon className="icon cursor-not-allowed" />
+          <UsersIcon className="icon cursor-not-allowed" />
           <div className="flex bg-[#202225] text-xs p-1 rounded-md">
             <input
               type="text"
               placeholder="Search"
-              className="bg-transparent focus:outline-none text-white pl-1 placeholder-[#72767d]"
+              className="bg-transparent focus:outline-none text-white pl-1 placeholder-[#72767d] cursor-not-allowed"
+              onKeyDown={notImplemented}
             />
             <SearchIcon className="h-4 text-[#72767d] mr-1" />
           </div>
@@ -111,7 +117,7 @@ function Chat() {
         <div ref={chatRef} className="pb-1" />
       </main>
       <div className="flex items-center p-2.5 bg-[#40444b] mx-5 mb-7 rounded-lg">
-        <PlusCircleIcon className="icon mr-4" />
+        <PlusCircleIcon className="icon mr-4 cursor-not-allowed" />
         <form className="flex-grow">
           <input
             ref={inputRef}
@@ -126,8 +132,8 @@ function Chat() {
             Send
           </button>
         </form>
-        <GiftIcon className="icon mr-2" />
-        <EmojiHappyIcon className="icon" />
+        <GiftIcon className="icon mr-2 cursor-not-allowed" />
+        <EmojiHappyIcon className="icon cursor-not-allowed" />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ function ServerIcon({ image }) {
     <img
       src={image}
       alt="logo"
-      className="h-12 cursor-pointer rounded-full transition-all duration-100 ease-out hover:rounded-2xl"
+      className="h-12 cursor-not-allowed rounded-full transition-all duration-100 ease-out hover:rounded-2xl"
     />
   );
 }
