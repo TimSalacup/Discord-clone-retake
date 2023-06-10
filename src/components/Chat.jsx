@@ -94,8 +94,8 @@ function Chat() {
             />
             <SearchIcon className="h-4 text-[#72767d] mr-1" />
           </div>
-          <InboxIcon className="icon" />
-          <QuestionMarkCircleIcon className="icon" />
+          <InboxIcon className="icon cursor-not-allowed" />
+          <QuestionMarkCircleIcon className="icon cursor-not-allowed" />
         </div>
       </header>
       <main className="flex-grow overflow-y-scroll scrollbar-hide">
