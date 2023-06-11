@@ -5,12 +5,13 @@ import { getFirestore } from "firebase/firestore";
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  apiKey: "AIzaSyCY9JFsY6JwwqphTXGVNAfrAJJAeskYctk",
+  authDomain: "discord-clone-retake.firebaseapp.com",
+  databaseURL: "https://discord-clone-retake-default-rtdb.firebaseio.com",
+  projectId: "discord-clone-retake",
+  storageBucket: "discord-clone-retake.appspot.com",
+  messagingSenderId: "518340595933",
+  appId: "1:518340595933:web:96db75ca3b72ca97808b34"
   // ...
 };
 
