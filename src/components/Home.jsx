@@ -19,6 +19,8 @@ function Home() {
   const [user, loading, error] = useAuthState(auth);
   const [channels] = useCollection(collection(db, "channels"));
 
+  console.log(channels)
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -76,7 +78,9 @@ function Home() {
               />
             </div>
             <div className="flex flex-col space-y-2 px-2 mb-4">
+            {/* <h1>Random test text</h1> */}
               {channels?.docs.map((doc) => (
+                // <h3> random text </h3>
                 <Channel
                   key={doc.id}
                   id={doc.id}

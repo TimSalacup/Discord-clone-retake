@@ -12,7 +12,6 @@ const firebaseConfig = {
   storageBucket: "discord-clone-retake.appspot.com",
   messagingSenderId: "518340595933",
   appId: "1:518340595933:web:96db75ca3b72ca97808b34"
-  // ...
 };
 
 // Initialize Firebase

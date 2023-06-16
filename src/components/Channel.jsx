@@ -20,7 +20,9 @@ function Channel({ id, channelName }) {
 
   return (
     <div className="flex font-medium items-center cursor-pointer hover:bg-[#3a3c43] p-1 rounded-md hover:text-white" onClick={setChannel}>
-      <HashtagIcon className="h-5 mr-2" /> {channelName}
+      <HashtagIcon className="h-5 mr-2" /> 
+      {/* Random text */}
+      {channelName}
     </div>
   );
 }
