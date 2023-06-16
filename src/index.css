@@ -17,7 +17,7 @@
 }
 
 @layer base {
-  html {
+  body {
     overflow-y: hidden;
   }
 }
