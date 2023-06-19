@@ -15,9 +15,3 @@
     @apply h-6 text-[#b9bbbe] cursor-pointer hover:text-[#dcddde]
   }
 }
-
-@layer base {
-  body {
-    overflow-y: hidden;
-  }
-}
